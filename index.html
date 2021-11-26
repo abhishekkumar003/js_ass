@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS ASSIGNMENT</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(119, 127, 128);
+            padding: 10px;
+        }
+
+        h1 {
+            color: rgb(88, 0, 12);
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 3rem;
+            color: chartreuse;
+        }
+
+
+        img {
+
+            height: 90vh;
+            width: 90vw;
+            margin-left: 5px;
+            margin-bottom: 55px;
+
+        }
+
+        @media all and (max-width:1240px) {
+            img {
+                height: 50vh;
+                width: 90vw;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>JAVASCRIPT CODE : </h1>
+    <img src="https://lh3.googleusercontent.com/pw/AM-JKLUoRU_Ha7IPCAItbTXzXmu8mSl-fM8HfGQpFzxsfRQl7xF3RjjCv_4RXF_d-9YRNQerZdsB02JSGHcjOcnyYcwFPDRI39bswtIp_w4F9rbbiAwNW8489FB9bSpXOMveR8wyt_SItXJH1z8Rzlhg9Sbn=w1070-h856-no?authuser=0"
+        alt="Code Photo">
+
+    <br>
+
+    <h1>CONSOLE OUTPUT : </h1>
+    <img src="https://lh3.googleusercontent.com/pw/AM-JKLVEGzmzLP_VjcGVRYdS7x23YgJ8UFzkoV91Ws1NbvQmpcmV_fc0SWfH-tkaoQ7UJpMCpfJ_U8JXGpGUNey5iRInBbdh5NkawBO2NomUfXXWJQe8xnAaZcKOdrbSBiGnr990fQCpfUBczVI6pV1EgCcs=w703-h370-no?authuser=0"
+        alt="output photo">
+    <script src="script.js"></script>
+
+
+    <br>
+
+    <h2>Or OPEN THE CONSOLE</h2>
+
+    <script>
+        function person(fname, lname, offAdd) {
+            this.firstName = fname;
+            this.lastName = lname;
+            this.Office_Address = offAdd;
+        }
+
+        const personA = new person('Abhishek', 'Kumar', 'Google, USA');
+        const personB = new person('Aman', 'Singh', 'Paytm, Gurgoan');
+        const personC = new person('Vishnu', 'Patel', 'Amazon, Hyderabad');
+
+        console.log('FIRST EMPLOYEE');
+        console.log('NAME : ' + personA.firstName + " " + personA.lastName);
+        console.log('OFFICE ADDRESS  : ' + personA.Office_Address);
+
+        console.log('\nSECOND EMPLOYEE');
+        console.log('NAME : ' + personB.firstName + " " + personB.lastName);
+        console.log('OFFICE ADDRESS  : ' + personB.Office_Address);
+
+        console.log('\nTHIRD EMPLOYEE');
+        console.log('NAME : ' + personC.firstName + " " + personC.lastName);
+        console.log('OFFICE ADDRESS  : ' + personC.Office_Address);
+    </script>
+</body>
+
+</html>
